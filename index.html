@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timed Typing Test App</title>
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="masthead">
+        <h1>Test Your Typing Speed</h1>
+    </header>
+
+    <main class="main">
+        <article class="intro">
+            <p>Type the text below exactly. Timer starts when you type!</p>
+        </article>
+
+        <section class="test-area">
+            <div id="origin-text">
+                <p>The text to test.</p>
+            </div>
+
+            <div class="test-wrapper">
+                <textarea id="test-area" rows="6"></textarea>
+            </div>
+
+            <div class="meta">
+                <div class="timer">00:00:00</div>
+                <button id="reset">Start Over</button>
+            </div>
+
+            <!-- NEW FEATURES -->
+            <div class="stats">
+                <p>WPM: <span id="wpm">0</span></p>
+                <p>Errors: <span id="errors">0</span></p>
+                <p>Top Scores: <span id="scores">None</span></p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
